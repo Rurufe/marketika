@@ -75,6 +75,12 @@ $color-white: #ffffff;
     background: $color-white;
     color: #414141;
 } 
+.btn-free {
+    @include start-button;
+    border: none ;
+    background: $color-white;
+    color: #414141;
+} 
 
 
 // === /Common ===
@@ -338,9 +344,54 @@ $color-white: #ffffff;
         margin: 0 auto 40px;
 
     }
-    &__button{}
+    &__button {}
 
 }
 
 // === / free ===
+
+// === footer ===
+.section-footer{
+    &__logo {
+        text-align: center;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: bold;
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{
+            a{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #464646;
+
+            &.active {
+                color: #fe50a6;
+            }
+    
+            }
+        }
+    }
+    &__copyright_and_links {
+        display: flex;
+        justify-content: space-between;
+        &-copyright {}
+        &-links {}
+    }
+    .helper-link {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+// === / footer ===
 
